@@ -19,9 +19,26 @@ body {
   overflow-x: hidden;
   font-family: $font-stack;
   background-color: #fff;
+  color: $color-primary;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
 }
