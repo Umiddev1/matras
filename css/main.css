@@ -341,7 +341,6 @@ template {
 /* FONTS */
 /* GENERAL */
 html {
-  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -360,11 +359,28 @@ body {
   overflow-x: hidden;
   font-family: "Raleway";
   background-color: #fff;
+  color: #01384D;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
 }
 
 /* VISUALLY-HIDDEN */
@@ -388,6 +404,121 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+.hero {
+  background: #EABF9F;
+}
+
+.header__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__btn {
+  margin-left: 38px;
+}
+
+.tel-btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.tel-btn::before {
+  content: '';
+  margin-right: 12px;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 5px;
+  background-image: url("../../images/Call.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.nav__list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.nav__item {
+  padding-top: 19px;
+  padding-bottom: 14px;
+  margin-left: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+}
+
+.carousel {
+  padding-bottom: 171px;
+  position: relative;
+}
+
+.carousel__page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel__title {
+  max-width: 735px;
+  width: 100%;
+  font-weight: 800;
+  font-size: 90px;
+  line-height: 105px;
+}
+
+.carousel__btn::after {
+  content: '';
+  margin-left: 15px;
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  position: relative;
+  top: 5px;
+  background-image: url("../../images/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.carousel__image img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.button {
+  padding: 13px 28px 14px 28px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background: #fff;
+  border: 2px solid #01384D;
+  border-radius: 5px;
+}
+
 
 .statistics {
   margin-top: 80px;
@@ -425,20 +556,3 @@ img {
     font-size: 14px;
   }
 }
-html {
-  box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-*, ::after, ::before {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}/*# sourceMappingURL=main.css.map */

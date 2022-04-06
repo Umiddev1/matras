@@ -1,0 +1,33 @@
+
+.header {
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__btn {
+        margin-left: 38px;
+    }
+
+}
+
+.tel-btn {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    &::before {
+        content: '';
+        margin-right: 12px;
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        position: relative;
+        top: 5px;
+        background-image: url('../../images/Call.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
