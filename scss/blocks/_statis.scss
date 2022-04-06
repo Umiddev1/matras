@@ -1,0 +1,38 @@
+.statistics__list {
+  // display: flex;
+}
+.statistics {
+  margin-top: 80px;
+  margin-bottom: 101px;
+}
+.statis__num {
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 141px;
+  color: #01384D;
+  margin-bottom: 10px;
+}
+.statis__title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #01384D;
+}
+
+
+@media screen and (max-width:1062px) {
+  .statis__num {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .statis__num {
+    font-weight: 700;
+font-size: 50px;
+line-height: 50px;
+  }
+  .statis__title {
+    font-size: 14px;
+  }
+}
