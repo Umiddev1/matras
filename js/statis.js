@@ -7,7 +7,7 @@ let arr = [
 ]
 
 arr.map((data) => {
-  elList.innerHTML += `<li class="statis__item col-lg-3 col-md-3 col-sm-3 col-xs-6 center-xs">
+  elList.innerHTML += `<li class="statis__item col-lg-3 col-md-3 col-sm-6 col-xs-6 center-xs">
   <h4 class="statis__num">${data.num}</h4><p class="statis__title">${data.title}</p>
   </li>`
 })

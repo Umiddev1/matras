@@ -16,3 +16,12 @@
         text-transform: capitalize;
     }
 }
+
+// Responsiveness =====================
+
+// mobile
+@media (max-width: 768px) {
+ .nav {
+     display: none;
+ }   
+}
