@@ -64,7 +64,6 @@ ul {
 .products__matras-item {
   background-color: rgba(199, 223, 245, 0.2);
   max-width: 1280px;
-  height: 486px;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 40px;
@@ -196,8 +195,36 @@ ul {
   margin-top: 2px;
 }
 
-@media screen and (max-width: 362px) {
+.products__sale-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  color: #01384D;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.products__matras-signs {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: absolute;
+  color: #fff;
+  top: -43px;
+  padding: 10px 45px;
+  background: #1FCA25;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 992px) {
   .products__matras-wrapper {
     flex-direction: column;
+  }
+
+  .products__matras-img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
   }
 }/*# sourceMappingURL=products.css.map */
