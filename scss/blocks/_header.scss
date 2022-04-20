@@ -1,0 +1,126 @@
+
+.header {
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__btn {
+        margin-left: 38px;
+    }
+
+    &__menu-btn {
+        display: none;
+    }
+
+}
+
+.tel-btn {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    &::before {
+        content: '';
+        margin-right: 12px;
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        position: relative;
+        top: 5px;
+        background-image: url('../../images/Call.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.menu {
+    display: none;
+}
+
+
+// Responsiveness =====================
+// mobile
+@media (max-width: 768px) {
+    .header {
+        &__main {
+            padding-top: 18px;
+        }
+
+        &__btns {
+            display: none;
+        }
+
+        &__menu-btn {
+            display: inline-block;
+            width: 23px;
+            height: 10px;
+            position: relative;
+            top: -5px;
+            background: none;
+            border: none;
+        }    
+    }
+
+    .menu {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateY(-200%);
+        transition: all 0.3s ease-out;
+        z-index: 1;
+
+        &__inner {
+            padding: 60px 30px;
+            padding-bottom: 92px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background: $color-secondary;
+        }
+
+        &__top {
+            margin-bottom: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__close {
+            width: 25px;
+            height: 25px;
+            background: none;
+            background-image: url('../../images/close.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            border: none;
+        }
+
+        &__item {
+            margin-bottom: 30px;
+            font-family: $font-secondary;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 24px;
+            text-transform: capitalize;
+        }
+
+        &__btn {
+            margin-top: 45px;
+        }
+
+        &__phone {
+            padding: 30px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -75px;
+            background: #fff;
+        }
+    }
+}
