@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    justify-content: end;
+    
+    &__list {
+        display: inline-flex;
+    }
+
+    &__item {
+        padding-top: 19px;
+        padding-bottom: 14px;
+        margin-left: 50px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: capitalize;
+    }
+}
+
+// Responsiveness =====================
+
+// mobile
+@media (max-width: 768px) {
+ .nav {
+     display: none;
+ }   
+}
