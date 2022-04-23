@@ -205,6 +205,7 @@ ul {
   top: 0;
   left: 0;
   display: none;
+  z-index: 1;
 }
 .modal {
   position: relative;
@@ -213,13 +214,27 @@ ul {
   font-size: 50px;
   color: #fff;
   position: absolute;
-  right: -311px;
+  right: -8px;
+  z-index: 9999;
   cursor: pointer;
 }
 .modal__img {
   width: 120px;
   height: 120px;
   object-fit: contain;
+}
+.modal__big-imgs {
+  display: flex;
+  width: 775px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.modal__item {
+  margin-left: 150px;
+}
+.modal__big-img {
+  width: 674px;
+  height: 355px;
 }
 .modal__btns {
   display: flex;
@@ -233,9 +248,7 @@ ul {
   cursor: pointer;
 }
 .modal__wrapper {
-  width: 480px;
-  overflow: hidden;
-  transform: translateX(0);
+  // transform: translateX(0);
 }
 .modal__big-imgs {
   display: flex;

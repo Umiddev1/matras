@@ -90,7 +90,10 @@ let miniDatas = [
 ]
 
 let elBtn = document.querySelector('.bx-search-alt-2');
-
+let elOne = document.querySelector('.one');
+let elTwo = document.querySelector('.two');
+let elThree = document.querySelector('.three');
+let mainImg = document.querySelector('.modal__big-img');
 elBtn.addEventListener("click", handleBtn) 
 elClose.addEventListener("click", handleClose)
 
@@ -101,3 +104,15 @@ function handleBtn() {
 function handleClose() {
   elModal.classList.remove("block");
 }
+
+elOne.addEventListener("click", (e) => {
+  mainImg.src = e.target.src
+})
+
+elTwo.addEventListener("click", (e) => {
+  mainImg.src = e.target.src
+})
+
+elThree.addEventListener("click", (e) => {
+  mainImg.src = e.target.src
+})

@@ -233,6 +233,7 @@ ul {
   top: 0;
   left: 0;
   display: none;
+  z-index: 1;
 }
 
 .modal {
@@ -243,7 +244,8 @@ ul {
   font-size: 50px;
   color: #fff;
   position: absolute;
-  right: -311px;
+  right: -8px;
+  z-index: 9999;
   cursor: pointer;
 }
 
@@ -252,6 +254,23 @@ ul {
   height: 120px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.modal__big-imgs {
+  display: flex;
+  width: 775px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modal__item {
+  margin-left: 150px;
+}
+
+.modal__big-img {
+  width: 674px;
+  height: 355px;
 }
 
 .modal__btns {
@@ -265,12 +284,6 @@ ul {
   background-color: transparent;
   margin-left: 20px;
   cursor: pointer;
-}
-
-.modal__wrapper {
-  width: 480px;
-  overflow: hidden;
-  transform: translateX(0);
 }
 
 .modal__big-imgs {
